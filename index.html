@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>demo</title>
+    <link href="./favicon.ico" type="image/x-icon" rel="icon" />
+    <link rel = "stylesheet" type = "text/css" href = "./styles.css">
+</head>
+<body>
+    <div class="app-container">
+        <div class="btn-container">
+            <!-- <div id="signIn" class="btn signin-btn">Signin</div> -->
+            <!-- <div id="signUp" class="btn signup-btn">Signup</div> -->
+        </div>
+        <div class="modal-content">
+            <form action="/" method="POST">
+                <div class="container">
+                    <div class="signin-modal">
+                        <p>Sign In to access application.!</p>
+                    </div>
+                    <input type="text" placeholder="Enter Email" name="email" required>
+                    <input type="password" placeholder="Enter Password" name="pswd" required>
+                    <button type="submit" class="signinbtn">Sign In</button>
+                </div>         
+                <div class="signin">
+                    <p>Don't have an account.? <a class="signup-btn">Signup</a>.</p>
+                </div>
+            </form>
+        </div>
+        <div class="modal">
+            <div class="modal-content">
+                <form action="/users" method="POST">
+                    <div class="container">
+                        <div class="signin-modal">
+                            <p>Sign Up to access application.!</p>
+                            <span class="close-button">×</span>
+                        </div>
+                        <input type="text" placeholder="Enter Name" name="name" required>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+                        <input type="password" placeholder="Enter Password" name="pswd" required>
+                        <input type="password" placeholder="Confirm your password" name="confpswd" required>
+                        <button type="submit" class="signinbtn">Sign Up</button>
+                    </div>
+                </form>  
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

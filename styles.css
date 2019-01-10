@@ -1,0 +1,122 @@
+*,body{
+    padding: 0px;
+    margin: 0px;
+}
+
+.app-container{
+    height: 100vh;
+    background: rgba(0,0,0,0.82);
+}
+.btn-container{
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background: rgba(0,0,0,0.4)
+}
+.btn{
+    padding: 10px;
+    border: 1px solid rgba(255,255,255,0.16);
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+}
+.signin-btn{
+    margin-right: 10px;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.05);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+.modal-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 1rem 1.5rem;
+    width: 24rem;
+    border-radius: 0.5rem;
+}
+.close-button {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: #f1f1f1;
+}
+.close-button:hover {
+    background-color: darkgray;
+}
+.show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.container {
+    padding: 10px 0;
+    background-color: white;
+}
+
+input[type=text], input[type=password],input[type=date] {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus, input[type=date]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+.signinbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+.signinbtn:hover {
+    opacity: 1;
+}
+a {
+    color: dodgerblue;
+}
+.signin {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.signin-modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.signin a{
+    cursor: pointer;
+}
+.signin-modal p{
+    font-size: 18px;
+}
